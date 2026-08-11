@@ -2,7 +2,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-16k%2B_Connections-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sergeevdms/)
 [![Upwork](https://img.shields.io/badge/Upwork-Top_Rated_%7C_7200%2B_hrs_%7C_100%25_JSS-14A800?style=flat-square&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~0142b51a7dc8e506a9)
-[![Telegram](https://img.shields.io/badge/Telegram-@your__telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/sergeevdms)
+[![Telegram](https://img.shields.io/badge/Telegram-@sergeevdms-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/sergeevdms)
 [![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sergeevdms@devlab.group)
 
 ## About me
