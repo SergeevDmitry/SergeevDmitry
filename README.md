@@ -9,35 +9,114 @@
 
 With over 15 years of engineering experience, I specialize in architecting high-load backend infrastructure, custom blockchain protocols, and production-grade Enterprise AI systems. My expertise spans low-level engineering in Python, Go, C++, and JS, alongside designing autonomous multi-agent AI workflows and advanced retrieval pipelines.
 
-I have been actively building secure decentralized systems in the Web3 space since 2017. I know the intricacies of launching new (custom) blockchains or existing nodes into production, and I focus on delivering scalable, self-correcting architectures that solve complex enterprise challenges without unnecessary overhead.
+I have been actively building secure decentralized systems in the Web3 space since 2017. I know the intricacies of launching new custom blockchains and operating existing nodes in production, and I focus on delivering scalable, self-correcting architectures that solve complex enterprise challenges without unnecessary overhead.
 
 Throughout my career, I have contributed to tier-1 projects and enterprise systems, including:
-*   **Elrond Network** *(Blockchain Developer, Aug 2019 – Dec 2020)*: Participated in the design and development of the sharding system.
-*   **BRD / BREAD** *(Blockchain Developer, Sep 2017 – Aug 2019)*: Participated in developing the backend and payment gateways (currently integrated into Coinbase Wallet).
-*   **CoinPayments** *(Senior Software Engineer, Nov 2016 – Sep 2017)*: Participated in the development of the backend infrastructure and payment gateways.
-*   **Scotiabank** *(DevOps Engineer, Jun 2013 – Oct 2015)*
-*   **Bitdefender** *(Software Engineer, Aug 2011 – Apr 2013)*
-*   **Qiwi** *(Back-end Developer, Jun 2010 – Jul 2011)*
 
-## 📦 AI & LLM Engineering
+* **Elrond Network** *(Blockchain Developer, Aug 2019 – Dec 2020)*: Participated in the design and development of the sharding system.
+* **BRD / BREAD** *(Blockchain Developer, Sep 2017 – Aug 2019)*: Participated in developing the backend and payment gateways (currently integrated into Coinbase Wallet).
+* **CoinPayments** *(Senior Software Engineer, Nov 2016 – Sep 2017)*: Participated in the development of the backend infrastructure and payment gateways.
+* **Scotiabank** *(DevOps Engineer, Jun 2013 – Oct 2015)*
+* **Bitdefender** *(Software Engineer, Aug 2011 – Apr 2013)*
+* **Qiwi** *(Back-end Developer, Jun 2010 – Jul 2011)*
 
-**[llm-kit](https://github.com/SergeevDmitry/llm-kit)**  
+## ⚡ Featured Open Source
+
+### [Agent Commerce Gateway](https://github.com/devlab-group/agent-commerce)
+
+A self-hosted, non-custodial gateway that turns an existing API into infrastructure AI agents can discover, call, authorize, and pay for.
+
+It provides a common execution layer for emerging agent-commerce protocols including **MCP, x402, A2A, ACP, and AP2**, while keeping payments direct between the buyer and merchant — the gateway never holds funds or private keys.
+
+* **MCP** tool exposure for existing APIs
+* **x402** on-chain payments
+* **AP2** mandate verification
+* Experimental **A2A** and **ACP** adapters
+* Payment receipts and auditable execution
+* OpenAPI-based resource onboarding
+* Self-hosted architecture with no custodial payment layer
+
+**[Architecture document →](https://github.com/devlab-group/agent-commerce/blob/master/architecture/agent-commerce.pdf)**  
+A practical example of how I approach production system architecture, protocol boundaries, execution pipelines, security assumptions, and failure handling.
+
+## 📐 Standards & Protocol Design
+
+### [ERC-8409 — Signed Service Payment Quotes](https://ethereum-magicians.org/t/erc-8409-signed-service-payment-quotes/29577)
+
+An ERC proposal I authored for cryptographically signed service payment quotes on EVM networks.
+
+ERC-8409 defines an **EIP-712 signed quote format** that allows a service provider to commit to payment terms for a specific request while keeping the provider's quote separate from the payer's authorization and the underlying settlement mechanism.
+
+The format is designed to remain transport-independent and can be used by protocols such as **HTTP, x402, MCP, A2A**, and other agent-commerce systems.
+
+The proposal covers:
+
+* Provider-signed service pricing
+* Request and payer binding
+* Chain, asset, recipient, and amount commitments
+* Quote validity windows
+* Replay and consumption semantics
+* EOA and ERC-1271 verification
+* Separation between pricing, authorization, and settlement
+
+## 🤖 AI & LLM Engineering
+
+### [RepoLore — ChatGPT App](https://chatgpt.com/plugins/plugin_asdk_app_6a898067d0b08191af8af6660eb1a9a5)
+
+A developer tool published as a **ChatGPT App** that helps engineers understand *why* public GitHub code exists.
+
+RepoLore traces files and specific line ranges through repository history and connects the current implementation to the commits, pull requests, issues, patches, and regression evidence that created it.
+
+Instead of only explaining what code does, it reconstructs the engineering history behind it.
+
+### [llm-kit](https://github.com/SergeevDmitry/llm-kit)
+
 Six small, focused npm packages for the unglamorous parts of building on LLMs. Each package solves one problem, installs on its own, and ships with zero or minimal dependencies.
 
-*   [`mend-json`](https://www.npmjs.com/package/mend-json) — Turns a truncated JSON stream into a valid partial value, on every chunk.
-*   [`token-chunk`](https://www.npmjs.com/package/token-chunk) — Chunks text and Markdown to a token budget along semantic boundaries.
-*   [`chat-fit`](https://www.npmjs.com/package/chat-fit) — Trims chat history to a budget without ever splitting a tool call from its result.
-*   [`usage-tab`](https://www.npmjs.com/package/usage-tab) — Turns provider usage objects into a reproducible cost breakdown.
-*   [`llm-backoff`](https://www.npmjs.com/package/llm-backoff) — Retries that read the provider's rate-limit headers instead of guessing.
-*   [`vec-cache`](https://www.npmjs.com/package/vec-cache) — SQLite embedding cache with partial batch hits, in-batch dedup and model-scoped keys.
+* [`mend-json`](https://www.npmjs.com/package/mend-json) — Turns a truncated JSON stream into a valid partial value, on every chunk.
+* [`token-chunk`](https://www.npmjs.com/package/token-chunk) — Chunks text and Markdown to a token budget along semantic boundaries.
+* [`chat-fit`](https://www.npmjs.com/package/chat-fit) — Trims chat history to a budget without ever splitting a tool call from its result.
+* [`usage-tab`](https://www.npmjs.com/package/usage-tab) — Turns provider usage objects into a reproducible cost breakdown.
+* [`llm-backoff`](https://www.npmjs.com/package/llm-backoff) — Retries that read the provider's rate-limit headers instead of guessing.
+* [`vec-cache`](https://www.npmjs.com/package/vec-cache) — SQLite embedding cache with partial batch hits, in-batch dedup and model-scoped keys.
 
 ## 🔗 Web3 & Smart Contracts
 
-**[Self-Hosted RWA Tokenization Platform](https://github.com/devlab-group/rwa-platform-evm)**  
-A self-hosted, single-tenant platform for tokenizing a real-world asset class as a permissioned ERC-20, with an auditor-attested supply lifecycle and on-chain cash redemption. Built using Solidity (Foundry), Go, and React.
-*   *Solana implementation:* **[rwa-platform-solana](https://github.com/devlab-group/rwa-platform-solana)**
+### [Self-Hosted RWA Tokenization Platform](https://github.com/devlab-group/rwa-platform-evm)
+
+A self-hosted, single-tenant platform for tokenizing a real-world asset class as a permissioned ERC-20, with an auditor-attested supply lifecycle and on-chain cash redemption.
+
+Built using **Solidity (Foundry), Go, and React**.
+
+* **Solana implementation:** [rwa-platform-solana](https://github.com/devlab-group/rwa-platform-solana)
+
+## 🛡️ Infrastructure & Security
+
+### [Immutable Audit](https://github.com/devlab-group/immutable-audit)
+
+A tamper-evident audit trail for Linux process execution.
+
+The project uses **eBPF** to capture `execve` events, chains them using SHA-256, ships the resulting event stream to a separate collector, and allows the resulting audit file to be independently verified.
+
+The goal is not execution prevention, but independently verifiable evidence of what happened on a system.
+
+### [Postflight](https://github.com/devlab-group/postflight)
+
+A single-file Bash auditing tool for Linux servers that performs security and health checks and provides the exact command required to fix each detected issue.
+
+Designed for both interactive server inspection and automated environments, with support for:
+
+* Human-readable terminal reports
+* JSON output
+* Prometheus-compatible output
+* CI/CD health gates
+* Security and system configuration checks
+* Actionable remediation commands
 
 ## 🔬 Research & Publications
 
-*   **[Adversarial Agentic Validation](https://zenodo.org/records/21875901?preview=1&preview_file=Adversarial+Agentic+Validation.pdf)**  
-    This research explores the rigorous validation of autonomous AI agents through adversarial testing methodologies. It outlines practical frameworks for identifying vulnerabilities and ensuring robust decision-making in multi-agent environments. By intentionally stressing system boundaries, the proposed approach guarantees higher reliability for production-grade, enterprise LLM deployments.
+### [Adversarial Agentic Validation](https://zenodo.org/records/21875901?preview=1&preview_file=Adversarial+Agentic+Validation.pdf)
+
+This research explores the rigorous validation of autonomous AI agents through adversarial testing methodologies.
+
+It outlines practical frameworks for identifying vulnerabilities and ensuring robust decision-making in multi-agent environments. By intentionally stressing system boundaries, the proposed approach aims to improve reliability for production-grade enterprise LLM deployments.
