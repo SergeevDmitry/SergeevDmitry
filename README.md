@@ -42,4 +42,4 @@ My stack spans Python, Go, C++, JavaScript, Solidity, distributed systems, agent
 
 [**ERC-8409 — Signed Service Payment Quotes**](https://ethereum-magicians.org/t/erc-8409-signed-service-payment-quotes/29577) — ERC proposal I authored for cryptographically signed service payment quotes using EIP-712, designed to separate provider pricing from payer authorization and settlement across agent-commerce flows.
 
-[**Adversarial Agentic Validation**](https://zenodo.org/records/21875901?preview=1&preview_file=Adversarial+Agentic+Validation.pdf) — Research on adversarial validation of autonomous AI agents, focused on failure discovery, boundary testing, and improving reliability in production multi-agent systems.
+[**Adversarial Agentic Validation**](https://zenodo.org/records/21875901) — Research on adversarial validation of autonomous AI agents, focused on failure discovery, boundary testing, and improving reliability in production multi-agent systems.
